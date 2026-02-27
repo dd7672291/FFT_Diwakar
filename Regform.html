@@ -1,0 +1,154 @@
+<html>
+    
+<head>
+    
+    <title>Job Application Form</title>
+
+    <style>
+        body {
+            
+            background-color: #f4f6fa;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: #ffffff;
+            padding: 30px;
+            margin: auto;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .inline {
+            width: auto;
+            margin-right: 10px;
+        }
+
+        .checkbox-group,
+        .radio-group {
+            margin-top: 8px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            width: 100%;
+            background-color: #3d45de;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2e36b5;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Job Application Form</h1>
+
+    <form>
+
+       
+        <label>Role Applying For:</label>
+        <select required>
+            <option value="">--- Select Option ---</option>
+            <option>Software Engineer</option>
+            <option>System Analyst</option>
+            <option>Data Scientist</option>
+        </select>
+
+        
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your full name" required>
+
+        
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        
+        <label>Phone:</label>
+        <input type="tel" placeholder="Enter your phone number" required>
+
+        
+        <label>Date of Birth:</label>
+        <input type="date" required>
+
+        
+        <label>Gender:</label>
+        <div class="radio-group">
+            <input type="radio" name="gender" class="inline"> Male
+            <input type="radio" name="gender" class="inline"> Female
+            <input type="radio" name="gender" class="inline"> Other
+        </div>
+
+        
+        <label>Highest Qualification:</label>
+        <input type="text" placeholder="Enter your qualification">
+
+        
+        <label>Skills:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" class="inline"> Python
+            <input type="checkbox" class="inline"> Java
+            <input type="checkbox" class="inline"> Machine Learning
+            <input type="checkbox" class="inline"> Web Development
+        </div>
+
+        
+        <label>Experience (in years):</label>
+        <input type="number" min="0">
+
+        
+        <label>Notice Period:</label>
+        <select>
+            <option>Immediate</option>
+            <option>15 Days</option>
+            <option>30 Days</option>
+            <option>60 Days</option>
+        </select>
+
+        <label>Address:</label>
+        <textarea rows="3" placeholder="Enter your address"></textarea>
+
+        
+        <label>Upload Profile Photo:</label>
+        <input type="file" accept="image/*">
+
+        
+        <label>Upload Resume:</label>
+        <input type="file" accept=".pdf,.doc,.docx">
+
+        <button type="submit">Submit Application</button>
+
+    </form>
+</div>
+
+</body>
+</html>
